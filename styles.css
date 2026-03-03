@@ -10,7 +10,27 @@ body {
     background-size: 300% 300%;
     animation: fundoAnimado 8s ease infinite;
 }
+#si{
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: 2px solid #00ffae;
+    outline: none;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;
+    transition: 0.3s;
+}
 
+#si::placeholder {
+    color: #d362d3;
+}
+
+#si:focus {
+    border-color: #00ffaa;
+    box-shadow: 0 0 15px #00ffaa;
+}
 @keyframes fundoAnimado {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
